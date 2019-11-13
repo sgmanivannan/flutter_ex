@@ -47,6 +47,7 @@ import 'package:flutter_ex/_023rxdartEx/rxdartex2.dart';
 import 'package:flutter_ex/utils/utils.dart';
 
 import '_018steppers/stepper3.dart';
+import '_018steppers/stepper5.dart';
 
 main() {
   runApp(MaterialApp(
@@ -156,6 +157,8 @@ class _HomePageState extends State<HomePage> {
     _addListItem(listRow, context, '018.3. Stepper 3', Stepper3());
 
     _addListItem(listRow, context, '018.4. Stepper 4', Stepper4());
+
+    _addListItem(listRow, context, '018.5. Stepper 5', Stepper5());
 
     _addListItem(listRow, context, '019.1. Tab 1', Tab1());
 
