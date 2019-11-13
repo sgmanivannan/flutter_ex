@@ -39,6 +39,8 @@ import 'package:flutter_ex/_020bottomnavigationbars/bottomnavigationbar1.dart';
 import 'package:flutter_ex/_020bottomnavigationbars/bottomnavigationbar2.dart';
 import 'package:flutter_ex/_021navigationdrawer/navigationdrawer1/navigationdrawer1.dart';
 import 'package:flutter_ex/_021navigationdrawer/navigationdrawer2/navigationdrawer2.dart';
+import 'package:flutter_ex/_021navigationdrawer/navigationdrawer3/navigationdrawer3.dart';
+import 'package:flutter_ex/_021navigationdrawer/navigationdrawer4/navigationdrawer4.dart';
 import 'package:flutter_ex/_022pageviewexample/pageviewex1.dart';
 import 'package:flutter_ex/_023rxdartEx/rxdartex1.dart';
 import 'package:flutter_ex/_023rxdartEx/rxdartex2.dart';
@@ -168,6 +170,12 @@ class _HomePageState extends State<HomePage> {
     _addListItem(listRow, context, '021.1. Navigation Drawer 1', NavigationDrawerEx1());
 
     _addListItem(listRow, context, '021.2. Navigation Drawer 2', NavigationDrawerEx2());
+
+    _addListItem(
+        listRow, context, '021.3. Navigation Drawer 3', NavigationDrawerEx3());
+
+    _addListItem(
+        listRow, context, '021.4. Navigation Drawer 4', NavigationDrawerEx4());
 
     _addListItem(listRow, context, '022. Page view', PageViewEx1());
 
