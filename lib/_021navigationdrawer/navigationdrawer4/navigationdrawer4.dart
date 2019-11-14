@@ -13,7 +13,6 @@ class NavigationDrawerEx4 extends StatefulWidget {
 
 class _NavigationDrawerEx4State extends State<NavigationDrawerEx4> {
   Widget _widget;
-
   String _appBarTitle;
 
   @override
