@@ -46,6 +46,8 @@ import 'package:flutter_ex/_023rxdartEx/rxdartex1.dart';
 import 'package:flutter_ex/_023rxdartEx/rxdartex2.dart';
 import 'package:flutter_ex/utils/utils.dart';
 
+import '_017lists/lists2/listloadmore.dart';
+import '_017lists/lists2/listloadmoreswiperefresh.dart';
 import '_018steppers/stepper3.dart';
 import '_018steppers/stepper5.dart';
 
@@ -149,6 +151,11 @@ class _HomePageState extends State<HomePage> {
     _addListItem(listRow, context, '016.2. Dialogs', Dialogs2());
 
     _addListItem(listRow, context, '017.1. Lists Example', Lists1());
+
+    _addListItem(listRow, context, '017.2. Lists Load More', ListLoadMore());
+
+    _addListItem(listRow, context, '017.3. Lists Load More Swipe refresh',
+        ListLoadMoreSwipeRefresh());
 
     _addListItem(listRow, context, '018.1. Stepper 1', Stepper1());
 
