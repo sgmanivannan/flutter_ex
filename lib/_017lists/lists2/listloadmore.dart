@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
 
 void main() => runApp(ListLoadMore());
 
@@ -25,17 +25,24 @@ class _ListLoadMoreState extends State<ListLoadMore> {
         isLoading = true;
       });
 
-      final response = await dio.get(nextPage);
-      List tempList = new List();
-      nextPage = response.data['next'];
-      for (int i = 0; i < response.data['results'].length; i++) {
-        tempList.add(response.data['results'][i]);
-      }
+      if (nextPage != null) {
+        final response = await dio.get(nextPage);
+        List tempList = new List();
+        nextPage = response.data['next'];
+        for (int i = 0; i < response.data['results'].length; i++) {
+          tempList.add(response.data['results'][i]);
+        }
 
-      setState(() {
-        isLoading = false;
-        names.addAll(tempList);
-      });
+        setState(() {
+          isLoading = false;
+          names.addAll(tempList);
+        });
+      } else {
+        print("nex page url is NULL");
+        setState(() {
+          isLoading = false;
+        });
+      }
     }
   }
 
